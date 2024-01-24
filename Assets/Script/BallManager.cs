@@ -6,27 +6,34 @@ using UnityEngine;
 public class BallManager : MonoBehaviour
 {
     [SerializeField] private GameObject ball;
+    [SerializeField] private GameObject arrow;
     public float timer;
+    int rnd;
 
     public GameObject blackHole;
     public float timeA , timeB ;
 
     private void Start()
     {
-        spawnBall();
+        StartCoroutine(spawn());
         StartCoroutine(riseDifficulty());
     }
+
     public void spawnBall()
     {
-        Instantiate(ball);
-        StopCoroutine(nextBall());
-        //StartCoroutine(nextBall());
+        StartCoroutine(spawn());
     }
 
-    IEnumerator nextBall()
+    IEnumerator spawn()
     {
-        yield return new WaitForSeconds(timer);
-        spawnBall();
+        rnd = Random.Range(0, 5);
+        arrow.transform.rotation = Quaternion.Euler(0, 0, (rnd * 90));
+        arrow.SetActive(true);
+        yield return new WaitForSeconds(1);
+        arrow.SetActive(false);
+        GameObject bale = Instantiate(ball);
+        BallScript baleScript = bale.GetComponent<BallScript>();
+        baleScript.dir = rnd;
         yield return null;
     }
 
