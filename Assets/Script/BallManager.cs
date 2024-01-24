@@ -26,7 +26,7 @@ public class BallManager : MonoBehaviour
 
     IEnumerator spawn()
     {
-        rnd = Random.Range(0, 5);
+        rnd = Random.Range(0, 4);
         arrow.transform.rotation = Quaternion.Euler(0, 0, (rnd * 90));
         arrow.SetActive(true);
         yield return new WaitForSeconds(1);
