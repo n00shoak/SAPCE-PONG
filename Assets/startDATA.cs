@@ -10,7 +10,7 @@ public class startDATA : MonoBehaviour
     private void Start()
     {
         data = FindObjectOfType<DATA>();
-
+        /*
         controller[0].Left = data.j1[0];
         controller[0].Right = data.j1[1];
 
@@ -22,6 +22,7 @@ public class startDATA : MonoBehaviour
 
         controller[3].Left = data.j4[0];
         controller[3].Right = data.j4[1];
+        */
     }
 
 

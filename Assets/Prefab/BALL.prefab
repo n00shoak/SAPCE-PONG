@@ -226,5 +226,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7040822146294693614}
-  maxSpeed: 50
+  maxSpeed: 75
   dir: 0

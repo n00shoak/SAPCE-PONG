@@ -21,7 +21,7 @@ public class rgb : MonoBehaviour
         {
             rend[i].color = Color.Lerp(actual, target, index);
         }
-        index += 0.002f;
+        index += 0.02f;
 
         if(index >= 1)
         {

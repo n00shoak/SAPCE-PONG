@@ -9,8 +9,8 @@ public class barController : MonoBehaviour
     public BoxCollider2D coll;
     public Image[] chargeFX;
 
-    public KeyCode Left;
-    public KeyCode Right;
+    [SerializeField] private KeyCode Left;
+    [SerializeField] private KeyCode Right;
 
     public bool v;
 
