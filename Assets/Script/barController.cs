@@ -45,6 +45,7 @@ public class barController : MonoBehaviour
         }
         else
         {
+            // horizontal and vertical movement
             if (!v)
             {
                 if (Input.GetKey(Left) && transform.position.x > -LimitDist) { transform.position += Vector3.left * speed * Time.deltaTime; }

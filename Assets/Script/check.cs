@@ -15,7 +15,7 @@ public class check : MonoBehaviour
     {
         if(starting)
         {
-            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S)) { jar = true; texts[0].color = Color.red; }
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)) { jar = true; texts[0].color = Color.red; }
             if (Input.GetKey(KeyCode.K) && Input.GetKey(KeyCode.L)) { jbr = true; texts[1].color = Color.blue; }
             if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.RightArrow)) { jcr = true; texts[2].color = Color.green; }
             if (Input.GetKey(KeyCode.Keypad2) && Input.GetKey(KeyCode.Keypad3)) { jdr = true; texts[3].color = Color.yellow; }

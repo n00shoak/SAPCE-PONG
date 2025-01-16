@@ -3226,6 +3226,7 @@ GameObject:
   - component: {fileID: 658221613}
   - component: {fileID: 658221612}
   - component: {fileID: 658221616}
+  - component: {fileID: 658221617}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3334,6 +3335,18 @@ MonoBehaviour:
   - {fileID: 838600924}
   - {fileID: 1885702985}
   - {fileID: 448764916}
+--- !u!114 &658221617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658221611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4601adad24aaceb4f999fa96ef21ef05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &673566072
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,7 +4065,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'J  1 '
+  m_text: 'J  4 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a252e7ef8df14f644b95612b2a5136ac, type: 2}
   m_sharedMaterial: {fileID: 8486971164737241764, guid: a252e7ef8df14f644b95612b2a5136ac, type: 2}
@@ -6245,7 +6258,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'J  1 '
+  m_text: "J  3 \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a252e7ef8df14f644b95612b2a5136ac, type: 2}
   m_sharedMaterial: {fileID: 8486971164737241764, guid: a252e7ef8df14f644b95612b2a5136ac, type: 2}

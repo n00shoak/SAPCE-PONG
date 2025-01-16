@@ -38,7 +38,7 @@ public class but : MonoBehaviour
     IEnumerator flash()
     {
 
-        if(count >= 100)
+        if(count >= 10)
         {
             count = 0;
             flashIndex++;
